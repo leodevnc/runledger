@@ -1,0 +1,8 @@
+{
+  "name": "Investigate INC-1042",
+  "steps": [
+    {"id": "collect", "tool": "read_incident", "args": {"incident_id": "INC-1042"}},
+    {"id": "assess", "tool": "assess_incident", "args": {"incident": {"$step": "collect"}}},
+    {"id": "publish", "tool": "publish_report", "args": {"assessment": {"$step": "assess"}}}
+  ]
+}

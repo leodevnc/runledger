@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Runledger — Execution workbench</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Runledger home"><span class="brand-icon">r<span>↗</span></span>runledger</a>
+    <div class="workspace-label"><span class="live-dot"></span> LOCAL WORKSPACE <span class="version">v0.1</span></div>
+    <button id="create" class="primary wide">+ New investigation</button>
+    <div class="section-label">EXECUTIONS <span id="run-count">0</span></div>
+    <nav id="runs" aria-label="Execution history"></nav>
+    <div class="sidebar-note"><div class="note-symbol">◇</div><strong>Make failure inspectable.</strong><p>Every action has a checkpoint.<br>Every recovery leaves a trail.</p><span class="local-note">Synthetic tools · No model calls</span></div>
+  </aside>
+  <main>
+    <header><div class="breadcrumb">Workspace <span>/</span> Execution workbench</div><div class="environment"><span class="live-dot"></span> localhost <span class="separator">|</span> SQLite / WAL</div></header>
+    <section class="hero"><div><div class="eyebrow">DURABLE AGENT EXECUTION</div><h1>Every run has a receipt.</h1><p>Pause at a decision. Break a worker. Know exactly what happened.</p></div><div class="hero-stamp">CHECKPOINT<br><strong>→ RECOVER</strong></div></section>
+    <div id="notification" role="status" aria-live="polite" hidden></div>
+    <section id="empty" class="empty"><div class="empty-mark">↗</div><h2>Your first run starts here.</h2><p>A three-step incident investigation makes the hard parts visible:<br>durable execution, human approval, and recovery after a lost worker.</p><button id="create-empty" class="primary">Start an investigation →</button><div class="walkthrough"><div><span>01</span><strong>Collect & assess</strong><p>Checkpoint every tool result.</p></div><div><span>02</span><strong>Review the action</strong><p>Approve the exact payload.</p></div><div><span>03</span><strong>Crash & recover</strong><p>One report. Two attempts.</p></div></div></section>
+    <div id="detail" hidden>
+      <section class="run-heading"><div><h2 id="run-name"></h2><div class="run-ident"><code id="run-id"></code><span id="run-state" class="badge"></span></div></div><div class="run-actions"><a id="export" class="button secondary" download>↓ Export trace</a><button id="cancel" class="quiet danger">Cancel run</button></div></section>
+      <section class="metrics" aria-label="Run evidence"><div><span>CHECKPOINTS</span><strong id="checkpoint-count">0 / 3</strong><small>Persisted tool outputs</small></div><div><span>TOOL ATTEMPTS</span><strong id="attempt-count">0</strong><small>Including resumed workers</small></div><div><span>PUBLISHED REPORTS</span><strong id="receipt-count">0</strong><small>Independent effect store</small></div><div><span>EVENT JOURNAL</span><strong id="journal-status">Verified</strong><small id="event-count">0 hash-linked events</small></div></section>
+      <div class="workspace-grid"><section class="panel execution"><div class="panel-heading"><div><span class="eyebrow">WORKFLOW</span><h3>Execution timeline</h3></div><span class="subtle">Sequential · 3 tool boundaries</span></div><div id="steps"></div><div class="toolbar"><button id="tick" class="primary">Advance one step →</button><button id="transient" class="secondary">Inject transient failure</button><button id="crash" class="secondary">Crash after report write</button></div><p class="toolbar-help">Each advance uses a fresh worker. A crashed worker's lease expires after 2 seconds.</p></section>
+      <section class="panel inspector"><div class="panel-heading"><div><span class="eyebrow">EVIDENCE</span><h3>Execution record</h3></div><span class="pill">Persistent</span></div><div id="approval" hidden></div><div class="inspector-section"><h4>Report receipts <span id="receipt-badge" class="pill">0</span></h4><p class="muted">Stored independently from workflow checkpoints.</p><pre id="receipts">No report published.</pre></div><div class="inspector-section"><h4>Counterfactual replay</h4><p class="muted">Recompute pure tools with recorded inputs. Report publishing is always skipped.</p><div class="replay-actions"><button id="replay-original" class="secondary">Recorded policy</button><button id="replay-changed" class="secondary">Changed policy ↗</button></div><div id="replay-result"></div></div></section></div>
+      <section class="panel journal"><div class="panel-heading"><div><span class="eyebrow">APPEND-ONLY JOURNAL</span><h3>The recovery trail</h3></div><span class="subtle">State transitions and events commit together</span></div><div class="table-wrap"><table><thead><tr><th>SEQ</th><th>EVENT</th><th>STEP / DETAIL</th><th>TIME</th><th>EVENT HASH</th></tr></thead><tbody id="events"></tbody></table></div></section>
+    </div>
+    <footer>Runledger <span>Execution mechanics, with evidence.</span><a href="https://github.com/leodevnc/runledger" target="_blank" rel="noreferrer">Source ↗</a></footer>
+  </main>
+</body></html>

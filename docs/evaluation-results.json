@@ -1,0 +1,513 @@
+{
+  "suite": "synthetic-failure-matrix-v1",
+  "python": "3.11.15",
+  "sqlite": "3.37.2",
+  "runs": 50,
+  "passed": 50,
+  "duplicate_effects": 0,
+  "median_case_ms": 120.49,
+  "max_case_ms": 359.65,
+  "notes": "Local synthetic tools; fake lease clock; timings include SQLite work, not model or network latency. No production throughput claim.",
+  "results": [
+    {
+      "scenario": "healthy",
+      "iteration": 0,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 1,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 2,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 3,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 4,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 5,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 6,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 7,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 8,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "healthy",
+      "iteration": 9,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 3,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 0,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 1,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 2,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 3,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 4,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 5,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 6,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 7,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 8,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "crash_after_effect",
+      "iteration": 9,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 0,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 1,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 2,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 3,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 4,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 5,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 6,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 7,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 8,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "transient_retry",
+      "iteration": 9,
+      "passed": true,
+      "state": "succeeded",
+      "attempts": 4,
+      "effects": 1,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 0,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 1,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 2,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 3,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 4,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 5,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 6,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 7,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 8,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "approval_rejected",
+      "iteration": 9,
+      "passed": true,
+      "state": "failed",
+      "attempts": 2,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 0,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 1,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 2,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 3,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 4,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 5,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 6,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 7,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 8,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    },
+    {
+      "scenario": "cancelled",
+      "iteration": 9,
+      "passed": true,
+      "state": "cancelled",
+      "attempts": 0,
+      "effects": 0,
+      "journal_valid": true,
+      "replay_side_effects": 0
+    }
+  ]
+}
