@@ -2,6 +2,7 @@
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Runledger — Execution workbench</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <aside class="sidebar">
     <a class="brand" href="/" aria-label="Runledger home"><span class="brand-icon">r<span>↗</span></span>runledger</a>
     <div class="workspace-label"><span class="live-dot"></span> LOCAL WORKSPACE <span class="version">v0.1</span></div>
@@ -10,7 +11,7 @@
     <nav id="runs" aria-label="Execution history"></nav>
     <div class="sidebar-note"><div class="note-symbol">◇</div><strong>Make failure inspectable.</strong><p>Every action has a checkpoint.<br>Every recovery leaves a trail.</p><span class="local-note">Synthetic tools · No model calls</span></div>
   </aside>
-  <main>
+  <main id="main" tabindex="-1">
     <header><div class="breadcrumb">Workspace <span>/</span> Execution workbench</div><div class="environment"><span class="live-dot"></span> localhost <span class="separator">|</span> SQLite / WAL</div></header>
     <section class="hero"><div><div class="eyebrow">DURABLE AGENT EXECUTION</div><h1>Every run has a receipt.</h1><p>Pause at a decision. Break a worker. Know exactly what happened.</p></div><div class="hero-stamp">CHECKPOINT<br><strong>→ RECOVER</strong></div></section>
     <div id="notification" role="status" aria-live="polite" hidden></div>

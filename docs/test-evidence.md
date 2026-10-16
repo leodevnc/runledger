@@ -1,5 +1,7 @@
 # Verification evidence
 
+Latest UI verification (2026-10-16): 30 Python checks and 3 browser tests passed. See [UI design notes](ui-design.md). Earlier timings below are retained as historical observations.
+
 ## Local runtime
 
 - Python 3.11.15 / SQLite 3.37.2

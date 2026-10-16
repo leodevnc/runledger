@@ -10,6 +10,8 @@ report receipt alongside two publish attempts.
 
 ![Runledger execution workbench](docs/workbench.png)
 
+The neutral interface keeps approval, recovery and evidence readable on desktop and mobile. See [UI design and verification](docs/ui-design.md) for the visual refresh and regression checks.
+
 ## Run it
 
 Python 3.11+ is the only runtime requirement. No model, API key, database server, or cloud account
